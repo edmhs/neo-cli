@@ -1,0 +1,23 @@
+version: '3'
+
+volumes:
+  chain:
+  index:
+  logs:
+  
+services:
+    
+  neo-cli:
+    container_name: neo-cli
+    image: edmhs/neo-cli:latest
+    restart: always
+    ports:
+      - 10331:10331
+      - 10332:10332
+      - 10333:10333
+      - 10334:10334
+    volumes:
+      - ./config/config.json:/neo-cli/config.json
+      - chain:/neo-cli/Chain_00746E41 
+      - index:/neo-cli/Index_00746E41 
+      - logs:/neo-cli/ApplicationLogs_00746E41 
