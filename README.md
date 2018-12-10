@@ -9,7 +9,6 @@ NEO cli running inside docker, access to running cli provided using linux "scree
 
 # cat Makefile to see shortcut commands
 
-
 ~~~
 
 ### Quickstart mainnet
